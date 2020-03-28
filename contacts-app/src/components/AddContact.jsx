@@ -3,6 +3,14 @@ import React from "react";
 class AddContact extends React.Component {
   state = { nameInput: "", phoneInput: "" };
 
+  isAddDisabled = () => {
+    if (this.state.nameInput.length <= 0 || this.state.phoneInput.length <= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   handleChangeNameValue = event => {
     const newName = event.target.value;
     this.setState({ nameInput: newName });
@@ -38,7 +46,11 @@ class AddContact extends React.Component {
           className="phoneInput"
           onChange={this.handleChangePhoneValue}
         />
-        <button className="addButton" onClick={this.handleAddContact}>
+        <button
+          className="addButton"
+          onClick={this.handleAddContact}
+          disabled={this.isAddDisabled()}
+        >
           Save Contacts
         </button>
       </div>
