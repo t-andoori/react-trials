@@ -4,11 +4,15 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Contacts App</h1>
-        <h3>2020's White Pages</h3>
+        <div className="container">
+          <h1>Contacts App</h1>
+          <h3>2020's White Pages</h3>
+        </div>
 
-        <h3>Delivered to your doorstep even if you don't want it.</h3>
-        <button className="learnMore">Learn More</button>
+        <div className="container-fluid">
+          <h5>Delivered to your doorstep even if you don't want it.</h5>
+          <button className="btn btn-primary">Learn More</button>
+        </div>
       </header>
     );
   }

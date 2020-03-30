@@ -32,27 +32,36 @@ class AddContact extends React.Component {
     const { nameInput, phoneInput } = this.state;
 
     return (
-      <div>
-        <input
-          value={nameInput}
-          placeholder="Name"
-          className="nameInput"
-          onChange={this.handleChangeNameValue}
-        />
+      <div className="form-row" m-2>
+        <div className="form-group col-md-3">
+          <input
+            class="form-control"
+            value={nameInput}
+            placeholder="Name"
+            className="nameInput"
+            onChange={this.handleChangeNameValue}
+          />
+        </div>
 
-        <input
-          value={phoneInput}
-          placeholder="Phone"
-          className="phoneInput"
-          onChange={this.handleChangePhoneValue}
-        />
-        <button
-          className="addButton"
-          onClick={this.handleAddContact}
-          disabled={this.isAddDisabled()}
-        >
-          Save Contacts
-        </button>
+        <div className="form-group col-md-3">
+          <input
+            className="form-control"
+            value={phoneInput}
+            placeholder="Phone"
+            className="phoneInput"
+            onChange={this.handleChangePhoneValue}
+          />
+        </div>
+        <div className="form-group col-md-2">
+          <button
+            className="btn btn-outline-dark
+        "
+            onClick={this.handleAddContact}
+            disabled={this.isAddDisabled()}
+          >
+            Save Contact
+          </button>
+        </div>
       </div>
     );
   }
