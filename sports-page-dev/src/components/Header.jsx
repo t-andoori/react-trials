@@ -4,7 +4,9 @@ class Header extends React.Component {
   render() {
     return (
       <header className="jumbotron jumbotron-fluid">
-        <h1 style={{}}>NHL SPORTS</h1>
+        <h1 className="headerh1">
+          <b>N H L</b> S P O R T S
+        </h1>
       </header>
     );
   }

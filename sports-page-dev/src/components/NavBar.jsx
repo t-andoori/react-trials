@@ -2,10 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 class NavBar extends React.Component {
-  state = {};
   render() {
     return (
-      <nav className="">
+      <nav>
         <ul
           className="nav nav-tabs d-flex justify-content-around"
           role="tablist"

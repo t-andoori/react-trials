@@ -2,7 +2,11 @@ import React from "react";
 
 class Game extends React.Component {
   render() {
-    return <h1> Game Page </h1>;
+    return (
+      <div>
+        <h1> Game Page </h1>
+      </div>
+    );
   }
 }
 

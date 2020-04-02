@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+h1 {
+  color: black;
+  font-weight: 400;
+  font-family: "Bahnschrift";
+  font-size: 70px;
+  margin: 5px 10px 5px 10px;
+  font-style: italic;
+}
+.nav-link {
+  color: black;
+  font-style: bold;
+  font-family: "Bahnschrift";
+}
+/* a.nav-link:hover {
+  display: block;
+} */
+
+a.nav-link.active {
+  background-color: black;
+  font-style: italic;
+}
