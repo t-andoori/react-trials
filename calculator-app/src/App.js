@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Result from "./components/Result.jsx";
 import Keypad from "./components/Keypad.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   constructor() {
@@ -36,12 +37,12 @@ class App extends Component {
     });
   };
   backspace = () => {
-    this.setState({ result: this.state.result.splice(0, -1) });
+    this.setState({ result: this.state.result.slice(0, -1) });
   };
   render() {
     return (
       <div className="container">
-        <h1>Hello, React!</h1>
+        {/* <h1>Hello, React!</h1> */}
         <Result result={this.state.result} />
         <Keypad onClick={this.onClick} />
       </div>
