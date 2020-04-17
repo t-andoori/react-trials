@@ -6,8 +6,8 @@ class Result extends Component {
     let { result } = this.props;
 
     return (
-      <div>
-        <p>{result}</p>
+      <div className="container">
+        <p className="resultDisplay">{result}</p>
       </div>
     );
   }
